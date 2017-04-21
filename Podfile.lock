@@ -1,0 +1,62 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - JCAlertView (1.1.5)
+  - JCore (1.1.2)
+  - JPush (3.0.3):
+    - JCore (~> 1.1.1)
+  - LFLiveKit (2.6)
+  - MJExtension (3.0.13)
+  - MJRefresh (3.1.12)
+  - RealReachability (1.1.8):
+    - RealReachability/Connection (= 1.1.8)
+    - RealReachability/Ping (= 1.1.8)
+  - RealReachability/Connection (1.1.8)
+  - RealReachability/Ping (1.1.8)
+  - SAMKeychain (1.5.2)
+  - UMengAnalytics (4.2.4)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
+
+DEPENDENCIES:
+  - AFNetworking
+  - JCAlertView
+  - JPush
+  - LFLiveKit
+  - MJExtension
+  - MJRefresh
+  - RealReachability
+  - SAMKeychain
+  - UMengAnalytics
+  - YYKit
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  JCAlertView: c65a7b298b8b497b3db783d82f719b88f4914869
+  JCore: 9e9bd280a38090d66aca0a7547581cd29804c6eb
+  JPush: 8ea7c5bee363191cb5214f5d34ae11e1c5494722
+  LFLiveKit: 2219563721f8aa0f188effc3395a06e2d53b23f2
+  MJExtension: 5932755f451458eefa24239358817f8d291240c7
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  RealReachability: e6c8a2bbffa316006e8c282efc1ee2567d61a920
+  SAMKeychain: 1865333198217411f35327e8da61b43de79b635b
+  UMengAnalytics: ef8d45f94c0e5771dc364cf6a5731d9d3b101da2
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+
+PODFILE CHECKSUM: 89b10f5efbeb889bf7d9f4bc79336241590b466b
+
+COCOAPODS: 1.1.1

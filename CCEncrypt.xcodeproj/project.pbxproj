@@ -1,0 +1,1020 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4201279E1DC7407200125A83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4201279D1DC7407200125A83 /* Assets.xcassets */; };
+		420127A11DC7407200125A83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4201279F1DC7407200125A83 /* LaunchScreen.storyboard */; };
+		420127AC1DC7407200125A83 /* CCEncryptTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 420127AB1DC7407200125A83 /* CCEncryptTests.m */; };
+		420127B71DC7407200125A83 /* CCEncryptUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 420127B61DC7407200125A83 /* CCEncryptUITests.m */; };
+		422058861E98AA1B00183194 /* CCPlayInfoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 422058851E98AA1B00183194 /* CCPlayInfoItem.m */; };
+		4220588A1E98AA5700183194 /* CCPlayingCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 422058881E98AA5700183194 /* CCPlayingCollectionCell.m */; };
+		4220588B1E98AA5700183194 /* CCPlayingCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 422058891E98AA5700183194 /* CCPlayingCollectionCell.xib */; };
+		422058951E98DD0800183194 /* CCConstDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = 4220588F1E98DD0800183194 /* CCConstDefines.m */; };
+		422058981E98DD2B00183194 /* CCNetHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 422058971E98DD2B00183194 /* CCNetHelper.m */; };
+		422058A61E99443D00183194 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 422058A51E99443D00183194 /* IJKMediaFramework.framework */; };
+		422058A91E994CFA00183194 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 422058A81E994CFA00183194 /* libstdc++.tbd */; };
+		422058B21E9963E200183194 /* CCMediaHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 422058B11E9963E200183194 /* CCMediaHelper.m */; };
+		422058BA1E99664E00183194 /* CCPlayingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 422058B91E99664E00183194 /* CCPlayingController.m */; };
+		422058BD1E9969F700183194 /* CCPlaysCollect.m in Sources */ = {isa = PBXBuildFile; fileRef = 422058BC1E9969F700183194 /* CCPlaysCollect.m */; };
+		4227174D1E9BAFC6004E4702 /* CCPlayingCollectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4227174C1E9BAFC6004E4702 /* CCPlayingCollectionController.m */; };
+		422717511E9BB0A9004E4702 /* CCPlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 422717501E9BB0A9004E4702 /* CCPlayView.m */; };
+		422717541E9BB23D004E4702 /* CCPlayViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 422717531E9BB23D004E4702 /* CCPlayViewCell.m */; };
+		422717571E9BD769004E4702 /* CCPlayScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 422717561E9BD769004E4702 /* CCPlayScrollView.m */; };
+		4227175D1E9CB826004E4702 /* CCLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4227175C1E9CB826004E4702 /* CCLoadingView.m */; };
+		4227175F1E9CB8DD004E4702 /* Gif.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4227175E1E9CB8DD004E4702 /* Gif.bundle */; };
+		425B20961E9CC5E000A65072 /* CCPlayScrollExtView.m in Sources */ = {isa = PBXBuildFile; fileRef = 425B20951E9CC5E000A65072 /* CCPlayScrollExtView.m */; };
+		425B209C1E9CD85B00A65072 /* CCRadianView.m in Sources */ = {isa = PBXBuildFile; fileRef = 425B209B1E9CD85B00A65072 /* CCRadianView.m */; };
+		425B209F1E9CDC4900A65072 /* CCPlayShowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 425B209E1E9CDC4900A65072 /* CCPlayShowView.m */; };
+		425B20A11E9CDC6200A65072 /* CCPlayShowView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 425B20A01E9CDC6200A65072 /* CCPlayShowView.xib */; };
+		425B20AF1E9D4E1F00A65072 /* CCRequestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 425B20AE1E9D4E1F00A65072 /* CCRequestHelper.m */; };
+		425B20B51E9DEB3800A65072 /* CCRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 425B20B41E9DEB3800A65072 /* CCRecordViewController.m */; };
+		425B20CA1EA0B64B00A65072 /* CCPowerHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 425B20C91EA0B64B00A65072 /* CCPowerHelper.m */; };
+		425B20CF1EA0B8C200A65072 /* LFLivePreview.m in Sources */ = {isa = PBXBuildFile; fileRef = 425B20CE1EA0B8C200A65072 /* LFLivePreview.m */; };
+		425B20D31EA3723900A65072 /* CCMineReactView.m in Sources */ = {isa = PBXBuildFile; fileRef = 425B20D21EA3723900A65072 /* CCMineReactView.m */; };
+		42A81E131E9A49540080CDD2 /* CCRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A81E121E9A49540080CDD2 /* CCRefresh.m */; };
+		42C4E00E1E74547C006DFD57 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C4E0071E74547C006DFD57 /* AppDelegate.m */; };
+		42C4E00F1E74547C006DFD57 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C4E0081E74547C006DFD57 /* main.m */; };
+		42C4E01F1E74580F006DFD57 /* CCBaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C4E01E1E74580F006DFD57 /* CCBaseTabBarController.m */; };
+		42C4E0221E74582B006DFD57 /* CCTintNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C4E0211E74582B006DFD57 /* CCTintNavigationController.m */; };
+		42C4E0281E74586F006DFD57 /* CCHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C4E0271E74586F006DFD57 /* CCHomeViewController.m */; };
+		42C4E0341E7458A5006DFD57 /* CCMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C4E0331E7458A5006DFD57 /* CCMineViewController.m */; };
+		42C7C7831E76949000FE33C5 /* CCCommonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C7C7811E76949000FE33C5 /* CCCommonController.m */; };
+		42C7C78B1E76966E00FE33C5 /* CCAppHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C7C78A1E76966E00FE33C5 /* CCAppHelper.m */; };
+		42C7C78F1E77B23600FE33C5 /* CCTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C7C78E1E77B23600FE33C5 /* CCTabBar.m */; };
+		E13C6C7A447595CD1EF4F3D0 /* libPods-CCEncrypt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CF67DD178FA4B38202620C7 /* libPods-CCEncrypt.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		420127A81DC7407200125A83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 420127861DC7407200125A83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4201278D1DC7407200125A83;
+			remoteInfo = CCEncrypt;
+		};
+		420127B31DC7407200125A83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 420127861DC7407200125A83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4201278D1DC7407200125A83;
+			remoteInfo = CCEncrypt;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1CF67DD178FA4B38202620C7 /* libPods-CCEncrypt.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CCEncrypt.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2588CB69D3BAC2111D0B0592 /* Pods-CCEncrypt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCEncrypt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CCEncrypt/Pods-CCEncrypt.debug.xcconfig"; sourceTree = "<group>"; };
+		4201278E1DC7407200125A83 /* 喵.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "喵.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4201279D1DC7407200125A83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		420127A01DC7407200125A83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		420127A21DC7407200125A83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		420127A71DC7407200125A83 /* CCEncryptTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CCEncryptTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		420127AB1DC7407200125A83 /* CCEncryptTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCEncryptTests.m; sourceTree = "<group>"; };
+		420127AD1DC7407200125A83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		420127B21DC7407200125A83 /* CCEncryptUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CCEncryptUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		420127B61DC7407200125A83 /* CCEncryptUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCEncryptUITests.m; sourceTree = "<group>"; };
+		420127B81DC7407200125A83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		422058841E98AA1B00183194 /* CCPlayInfoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPlayInfoItem.h; sourceTree = "<group>"; };
+		422058851E98AA1B00183194 /* CCPlayInfoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCPlayInfoItem.m; sourceTree = "<group>"; };
+		422058871E98AA5700183194 /* CCPlayingCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPlayingCollectionCell.h; sourceTree = "<group>"; };
+		422058881E98AA5700183194 /* CCPlayingCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCPlayingCollectionCell.m; sourceTree = "<group>"; };
+		422058891E98AA5700183194 /* CCPlayingCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCPlayingCollectionCell.xib; sourceTree = "<group>"; };
+		4220588E1E98DD0800183194 /* CCConstDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCConstDefines.h; sourceTree = "<group>"; };
+		4220588F1E98DD0800183194 /* CCConstDefines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCConstDefines.m; sourceTree = "<group>"; };
+		422058901E98DD0800183194 /* CCDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCDefines.h; sourceTree = "<group>"; };
+		422058911E98DD0800183194 /* CCSingleDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCSingleDefines.h; sourceTree = "<group>"; };
+		422058921E98DD0800183194 /* CCToolDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCToolDefines.h; sourceTree = "<group>"; };
+		422058931E98DD0800183194 /* CCViewDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCViewDefines.h; sourceTree = "<group>"; };
+		422058961E98DD2B00183194 /* CCNetHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCNetHelper.h; sourceTree = "<group>"; };
+		422058971E98DD2B00183194 /* CCNetHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCNetHelper.m; sourceTree = "<group>"; };
+		422058A51E99443D00183194 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
+		422058A71E99460E00183194 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		422058A81E994CFA00183194 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		422058B01E9963E200183194 /* CCMediaHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCMediaHelper.h; sourceTree = "<group>"; };
+		422058B11E9963E200183194 /* CCMediaHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCMediaHelper.m; sourceTree = "<group>"; };
+		422058B81E99664E00183194 /* CCPlayingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPlayingController.h; sourceTree = "<group>"; };
+		422058B91E99664E00183194 /* CCPlayingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCPlayingController.m; sourceTree = "<group>"; };
+		422058BB1E9969F700183194 /* CCPlaysCollect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPlaysCollect.h; sourceTree = "<group>"; };
+		422058BC1E9969F700183194 /* CCPlaysCollect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCPlaysCollect.m; sourceTree = "<group>"; };
+		4227174B1E9BAFC6004E4702 /* CCPlayingCollectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPlayingCollectionController.h; sourceTree = "<group>"; };
+		4227174C1E9BAFC6004E4702 /* CCPlayingCollectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCPlayingCollectionController.m; sourceTree = "<group>"; };
+		4227174F1E9BB0A9004E4702 /* CCPlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPlayView.h; sourceTree = "<group>"; };
+		422717501E9BB0A9004E4702 /* CCPlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCPlayView.m; sourceTree = "<group>"; };
+		422717521E9BB23D004E4702 /* CCPlayViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPlayViewCell.h; sourceTree = "<group>"; };
+		422717531E9BB23D004E4702 /* CCPlayViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCPlayViewCell.m; sourceTree = "<group>"; };
+		422717551E9BD769004E4702 /* CCPlayScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPlayScrollView.h; sourceTree = "<group>"; };
+		422717561E9BD769004E4702 /* CCPlayScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCPlayScrollView.m; sourceTree = "<group>"; };
+		4227175B1E9CB826004E4702 /* CCLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCLoadingView.h; sourceTree = "<group>"; };
+		4227175C1E9CB826004E4702 /* CCLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCLoadingView.m; sourceTree = "<group>"; };
+		4227175E1E9CB8DD004E4702 /* Gif.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Gif.bundle; sourceTree = "<group>"; };
+		425B20941E9CC5E000A65072 /* CCPlayScrollExtView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPlayScrollExtView.h; sourceTree = "<group>"; };
+		425B20951E9CC5E000A65072 /* CCPlayScrollExtView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCPlayScrollExtView.m; sourceTree = "<group>"; };
+		425B209A1E9CD85B00A65072 /* CCRadianView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCRadianView.h; sourceTree = "<group>"; };
+		425B209B1E9CD85B00A65072 /* CCRadianView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCRadianView.m; sourceTree = "<group>"; };
+		425B209D1E9CDC4900A65072 /* CCPlayShowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPlayShowView.h; sourceTree = "<group>"; };
+		425B209E1E9CDC4900A65072 /* CCPlayShowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCPlayShowView.m; sourceTree = "<group>"; };
+		425B20A01E9CDC6200A65072 /* CCPlayShowView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCPlayShowView.xib; sourceTree = "<group>"; };
+		425B20AD1E9D4E1F00A65072 /* CCRequestHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCRequestHelper.h; sourceTree = "<group>"; };
+		425B20AE1E9D4E1F00A65072 /* CCRequestHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCRequestHelper.m; sourceTree = "<group>"; };
+		425B20B31E9DEB3800A65072 /* CCRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCRecordViewController.h; sourceTree = "<group>"; };
+		425B20B41E9DEB3800A65072 /* CCRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCRecordViewController.m; sourceTree = "<group>"; };
+		425B20C81EA0B64B00A65072 /* CCPowerHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPowerHelper.h; sourceTree = "<group>"; };
+		425B20C91EA0B64B00A65072 /* CCPowerHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCPowerHelper.m; sourceTree = "<group>"; };
+		425B20CD1EA0B8C200A65072 /* LFLivePreview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFLivePreview.h; sourceTree = "<group>"; };
+		425B20CE1EA0B8C200A65072 /* LFLivePreview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFLivePreview.m; sourceTree = "<group>"; };
+		425B20D11EA3723900A65072 /* CCMineReactView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCMineReactView.h; sourceTree = "<group>"; };
+		425B20D21EA3723900A65072 /* CCMineReactView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCMineReactView.m; sourceTree = "<group>"; };
+		42A81E111E9A49540080CDD2 /* CCRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCRefresh.h; sourceTree = "<group>"; };
+		42A81E121E9A49540080CDD2 /* CCRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCRefresh.m; sourceTree = "<group>"; };
+		42C4E0061E74547C006DFD57 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		42C4E0071E74547C006DFD57 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		42C4E0081E74547C006DFD57 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		42C4E01D1E74580F006DFD57 /* CCBaseTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBaseTabBarController.h; sourceTree = "<group>"; };
+		42C4E01E1E74580F006DFD57 /* CCBaseTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCBaseTabBarController.m; sourceTree = "<group>"; };
+		42C4E0201E74582B006DFD57 /* CCTintNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCTintNavigationController.h; sourceTree = "<group>"; };
+		42C4E0211E74582B006DFD57 /* CCTintNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCTintNavigationController.m; sourceTree = "<group>"; };
+		42C4E0261E74586F006DFD57 /* CCHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCHomeViewController.h; sourceTree = "<group>"; };
+		42C4E0271E74586F006DFD57 /* CCHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHomeViewController.m; sourceTree = "<group>"; };
+		42C4E0321E7458A5006DFD57 /* CCMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCMineViewController.h; sourceTree = "<group>"; };
+		42C4E0331E7458A5006DFD57 /* CCMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCMineViewController.m; sourceTree = "<group>"; };
+		42C7C7811E76949000FE33C5 /* CCCommonController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCCommonController.m; sourceTree = "<group>"; };
+		42C7C7821E76949000FE33C5 /* CCCommonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCCommonController.h; sourceTree = "<group>"; };
+		42C7C7891E76966E00FE33C5 /* CCAppHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCAppHelper.h; sourceTree = "<group>"; };
+		42C7C78A1E76966E00FE33C5 /* CCAppHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCAppHelper.m; sourceTree = "<group>"; };
+		42C7C78D1E77B23600FE33C5 /* CCTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCTabBar.h; sourceTree = "<group>"; };
+		42C7C78E1E77B23600FE33C5 /* CCTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCTabBar.m; sourceTree = "<group>"; };
+		E4BFB9A723A375B7B2A013D9 /* Pods-CCEncrypt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCEncrypt.release.xcconfig"; path = "Pods/Target Support Files/Pods-CCEncrypt/Pods-CCEncrypt.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4201278B1DC7407200125A83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				422058A91E994CFA00183194 /* libstdc++.tbd in Frameworks */,
+				E13C6C7A447595CD1EF4F3D0 /* libPods-CCEncrypt.a in Frameworks */,
+				422058A61E99443D00183194 /* IJKMediaFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		420127A41DC7407200125A83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		420127AF1DC7407200125A83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		420127851DC7407200125A83 = {
+			isa = PBXGroup;
+			children = (
+				420127901DC7407200125A83 /* CCEncrypt */,
+				420127AA1DC7407200125A83 /* CCEncryptTests */,
+				420127B51DC7407200125A83 /* CCEncryptUITests */,
+				4201278F1DC7407200125A83 /* Products */,
+				AC28F5F46ABA346969DBF61F /* Pods */,
+				9436A5BE3FD0BDEAE5768B49 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4201278F1DC7407200125A83 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4201278E1DC7407200125A83 /* 喵.app */,
+				420127A71DC7407200125A83 /* CCEncryptTests.xctest */,
+				420127B21DC7407200125A83 /* CCEncryptUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		420127901DC7407200125A83 /* CCEncrypt */ = {
+			isa = PBXGroup;
+			children = (
+				42C4E0041E74547C006DFD57 /* Classes */,
+				4220588C1E98DD0800183194 /* Common */,
+				422058A41E99443D00183194 /* Framework */,
+				420127911DC7407200125A83 /* Supporting Files */,
+			);
+			path = CCEncrypt;
+			sourceTree = "<group>";
+		};
+		420127911DC7407200125A83 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4227175E1E9CB8DD004E4702 /* Gif.bundle */,
+				4201279D1DC7407200125A83 /* Assets.xcassets */,
+				4201279F1DC7407200125A83 /* LaunchScreen.storyboard */,
+				420127A21DC7407200125A83 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		420127AA1DC7407200125A83 /* CCEncryptTests */ = {
+			isa = PBXGroup;
+			children = (
+				420127AB1DC7407200125A83 /* CCEncryptTests.m */,
+				420127AD1DC7407200125A83 /* Info.plist */,
+			);
+			path = CCEncryptTests;
+			sourceTree = "<group>";
+		};
+		420127B51DC7407200125A83 /* CCEncryptUITests */ = {
+			isa = PBXGroup;
+			children = (
+				420127B61DC7407200125A83 /* CCEncryptUITests.m */,
+				420127B81DC7407200125A83 /* Info.plist */,
+			);
+			path = CCEncryptUITests;
+			sourceTree = "<group>";
+		};
+		422058821E98A9E800183194 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				422058BB1E9969F700183194 /* CCPlaysCollect.h */,
+				422058BC1E9969F700183194 /* CCPlaysCollect.m */,
+				422058841E98AA1B00183194 /* CCPlayInfoItem.h */,
+				422058851E98AA1B00183194 /* CCPlayInfoItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		422058831E98A9E800183194 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				422058871E98AA5700183194 /* CCPlayingCollectionCell.h */,
+				422058881E98AA5700183194 /* CCPlayingCollectionCell.m */,
+				422058891E98AA5700183194 /* CCPlayingCollectionCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4220588C1E98DD0800183194 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				4220588D1E98DD0800183194 /* Defines */,
+				422058941E98DD0800183194 /* Network */,
+				422058AF1E9963CF00183194 /* Media */,
+				42A81E061E9A481E0080CDD2 /* Refresh */,
+				425B20C71EA0B64B00A65072 /* Power */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		4220588D1E98DD0800183194 /* Defines */ = {
+			isa = PBXGroup;
+			children = (
+				4220588E1E98DD0800183194 /* CCConstDefines.h */,
+				4220588F1E98DD0800183194 /* CCConstDefines.m */,
+				422058901E98DD0800183194 /* CCDefines.h */,
+				422058911E98DD0800183194 /* CCSingleDefines.h */,
+				422058921E98DD0800183194 /* CCToolDefines.h */,
+				422058931E98DD0800183194 /* CCViewDefines.h */,
+			);
+			path = Defines;
+			sourceTree = "<group>";
+		};
+		422058941E98DD0800183194 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				422058961E98DD2B00183194 /* CCNetHelper.h */,
+				422058971E98DD2B00183194 /* CCNetHelper.m */,
+				425B20AD1E9D4E1F00A65072 /* CCRequestHelper.h */,
+				425B20AE1E9D4E1F00A65072 /* CCRequestHelper.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		422058A41E99443D00183194 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				422058A51E99443D00183194 /* IJKMediaFramework.framework */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		422058AF1E9963CF00183194 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				422058B01E9963E200183194 /* CCMediaHelper.h */,
+				422058B11E9963E200183194 /* CCMediaHelper.m */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
+		422058B31E99661C00183194 /* Playing(播放) */ = {
+			isa = PBXGroup;
+			children = (
+				4227174E1E9BB075004E4702 /* View */,
+				422058B41E99661C00183194 /* Controller */,
+			);
+			name = "Playing(播放)";
+			path = Playing;
+			sourceTree = "<group>";
+		};
+		422058B41E99661C00183194 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				422058B81E99664E00183194 /* CCPlayingController.h */,
+				422058B91E99664E00183194 /* CCPlayingController.m */,
+				4227174B1E9BAFC6004E4702 /* CCPlayingCollectionController.h */,
+				4227174C1E9BAFC6004E4702 /* CCPlayingCollectionController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4227174E1E9BB075004E4702 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				422717551E9BD769004E4702 /* CCPlayScrollView.h */,
+				422717561E9BD769004E4702 /* CCPlayScrollView.m */,
+				4227174F1E9BB0A9004E4702 /* CCPlayView.h */,
+				422717501E9BB0A9004E4702 /* CCPlayView.m */,
+				422717521E9BB23D004E4702 /* CCPlayViewCell.h */,
+				422717531E9BB23D004E4702 /* CCPlayViewCell.m */,
+				4227175B1E9CB826004E4702 /* CCLoadingView.h */,
+				4227175C1E9CB826004E4702 /* CCLoadingView.m */,
+				425B20941E9CC5E000A65072 /* CCPlayScrollExtView.h */,
+				425B20951E9CC5E000A65072 /* CCPlayScrollExtView.m */,
+				425B209D1E9CDC4900A65072 /* CCPlayShowView.h */,
+				425B209E1E9CDC4900A65072 /* CCPlayShowView.m */,
+				425B20A01E9CDC6200A65072 /* CCPlayShowView.xib */,
+				425B209A1E9CD85B00A65072 /* CCRadianView.h */,
+				425B209B1E9CD85B00A65072 /* CCRadianView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		425B20B11E9DEA5600A65072 /* Record(录制) */ = {
+			isa = PBXGroup;
+			children = (
+				425B20CC1EA0B8B600A65072 /* View */,
+				425B20B21E9DEA5600A65072 /* Controller */,
+			);
+			name = "Record(录制)";
+			path = Record;
+			sourceTree = "<group>";
+		};
+		425B20B21E9DEA5600A65072 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				425B20B31E9DEB3800A65072 /* CCRecordViewController.h */,
+				425B20B41E9DEB3800A65072 /* CCRecordViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		425B20C71EA0B64B00A65072 /* Power */ = {
+			isa = PBXGroup;
+			children = (
+				425B20C81EA0B64B00A65072 /* CCPowerHelper.h */,
+				425B20C91EA0B64B00A65072 /* CCPowerHelper.m */,
+			);
+			path = Power;
+			sourceTree = "<group>";
+		};
+		425B20CC1EA0B8B600A65072 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				425B20CD1EA0B8C200A65072 /* LFLivePreview.h */,
+				425B20CE1EA0B8C200A65072 /* LFLivePreview.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		425B20D01EA3720A00A65072 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				425B20D11EA3723900A65072 /* CCMineReactView.h */,
+				425B20D21EA3723900A65072 /* CCMineReactView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		42A81E061E9A481E0080CDD2 /* Refresh */ = {
+			isa = PBXGroup;
+			children = (
+				42A81E111E9A49540080CDD2 /* CCRefresh.h */,
+				42A81E121E9A49540080CDD2 /* CCRefresh.m */,
+			);
+			path = Refresh;
+			sourceTree = "<group>";
+		};
+		42C4E0041E74547C006DFD57 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				42C4E0051E74547C006DFD57 /* Begin */,
+				42C4E0111E7455F8006DFD57 /* Base */,
+				42C4E0131E7455F8006DFD57 /* Home(首页) */,
+				422058B31E99661C00183194 /* Playing(播放) */,
+				425B20B11E9DEA5600A65072 /* Record(录制) */,
+				42C4E0151E7455F8006DFD57 /* Mine(我) */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		42C4E0051E74547C006DFD57 /* Begin */ = {
+			isa = PBXGroup;
+			children = (
+				42C4E0081E74547C006DFD57 /* main.m */,
+				42C4E0061E74547C006DFD57 /* AppDelegate.h */,
+				42C4E0071E74547C006DFD57 /* AppDelegate.m */,
+				42C7C7851E76961600FE33C5 /* Helper */,
+			);
+			path = Begin;
+			sourceTree = "<group>";
+		};
+		42C4E0111E7455F8006DFD57 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				42C7C78C1E77B21A00FE33C5 /* View */,
+				42C4E0171E745799006DFD57 /* Controller */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		42C4E0131E7455F8006DFD57 /* Home(首页) */ = {
+			isa = PBXGroup;
+			children = (
+				422058821E98A9E800183194 /* Model */,
+				422058831E98A9E800183194 /* View */,
+				42C4E0191E7457AB006DFD57 /* Controller */,
+			);
+			name = "Home(首页)";
+			path = Home;
+			sourceTree = "<group>";
+		};
+		42C4E0151E7455F8006DFD57 /* Mine(我) */ = {
+			isa = PBXGroup;
+			children = (
+				425B20D01EA3720A00A65072 /* View */,
+				42C4E01B1E7457B9006DFD57 /* Controller */,
+			);
+			name = "Mine(我)";
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		42C4E0171E745799006DFD57 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				42C4E01D1E74580F006DFD57 /* CCBaseTabBarController.h */,
+				42C4E01E1E74580F006DFD57 /* CCBaseTabBarController.m */,
+				42C4E0201E74582B006DFD57 /* CCTintNavigationController.h */,
+				42C4E0211E74582B006DFD57 /* CCTintNavigationController.m */,
+				42C7C7821E76949000FE33C5 /* CCCommonController.h */,
+				42C7C7811E76949000FE33C5 /* CCCommonController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		42C4E0191E7457AB006DFD57 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				42C4E0261E74586F006DFD57 /* CCHomeViewController.h */,
+				42C4E0271E74586F006DFD57 /* CCHomeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		42C4E01B1E7457B9006DFD57 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				42C4E0321E7458A5006DFD57 /* CCMineViewController.h */,
+				42C4E0331E7458A5006DFD57 /* CCMineViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		42C7C7851E76961600FE33C5 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				42C7C7891E76966E00FE33C5 /* CCAppHelper.h */,
+				42C7C78A1E76966E00FE33C5 /* CCAppHelper.m */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		42C7C78C1E77B21A00FE33C5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				42C7C78D1E77B23600FE33C5 /* CCTabBar.h */,
+				42C7C78E1E77B23600FE33C5 /* CCTabBar.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9436A5BE3FD0BDEAE5768B49 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				422058A81E994CFA00183194 /* libstdc++.tbd */,
+				1CF67DD178FA4B38202620C7 /* libPods-CCEncrypt.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AC28F5F46ABA346969DBF61F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2588CB69D3BAC2111D0B0592 /* Pods-CCEncrypt.debug.xcconfig */,
+				E4BFB9A723A375B7B2A013D9 /* Pods-CCEncrypt.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4201278D1DC7407200125A83 /* CCEncrypt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 420127BB1DC7407200125A83 /* Build configuration list for PBXNativeTarget "CCEncrypt" */;
+			buildPhases = (
+				4E829B5FCBA7AB3E8DDBB6FE /* [CP] Check Pods Manifest.lock */,
+				4201278A1DC7407200125A83 /* Sources */,
+				4201278B1DC7407200125A83 /* Frameworks */,
+				4201278C1DC7407200125A83 /* Resources */,
+				3DF69A395D5E0D59DF887F8D /* [CP] Embed Pods Frameworks */,
+				28D06423AFC7DC0767601565 /* [CP] Copy Pods Resources */,
+				425B20D41EA3BDE200A65072 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CCEncrypt;
+			productName = CCEncrypt;
+			productReference = 4201278E1DC7407200125A83 /* 喵.app */;
+			productType = "com.apple.product-type.application";
+		};
+		420127A61DC7407200125A83 /* CCEncryptTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 420127BE1DC7407200125A83 /* Build configuration list for PBXNativeTarget "CCEncryptTests" */;
+			buildPhases = (
+				420127A31DC7407200125A83 /* Sources */,
+				420127A41DC7407200125A83 /* Frameworks */,
+				420127A51DC7407200125A83 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				420127A91DC7407200125A83 /* PBXTargetDependency */,
+			);
+			name = CCEncryptTests;
+			productName = CCEncryptTests;
+			productReference = 420127A71DC7407200125A83 /* CCEncryptTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		420127B11DC7407200125A83 /* CCEncryptUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 420127C11DC7407200125A83 /* Build configuration list for PBXNativeTarget "CCEncryptUITests" */;
+			buildPhases = (
+				420127AE1DC7407200125A83 /* Sources */,
+				420127AF1DC7407200125A83 /* Frameworks */,
+				420127B01DC7407200125A83 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				420127B41DC7407200125A83 /* PBXTargetDependency */,
+			);
+			name = CCEncryptUITests;
+			productName = CCEncryptUITests;
+			productReference = 420127B21DC7407200125A83 /* CCEncryptUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		420127861DC7407200125A83 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = CC;
+				TargetAttributes = {
+					4201278D1DC7407200125A83 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = UB39Q62P6K;
+					};
+					420127A61DC7407200125A83 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 4201278D1DC7407200125A83;
+					};
+					420127B11DC7407200125A83 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 4201278D1DC7407200125A83;
+					};
+				};
+			};
+			buildConfigurationList = 420127891DC7407200125A83 /* Build configuration list for PBXProject "CCEncrypt" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 420127851DC7407200125A83;
+			productRefGroup = 4201278F1DC7407200125A83 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4201278D1DC7407200125A83 /* CCEncrypt */,
+				420127A61DC7407200125A83 /* CCEncryptTests */,
+				420127B11DC7407200125A83 /* CCEncryptUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4201278C1DC7407200125A83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4227175F1E9CB8DD004E4702 /* Gif.bundle in Resources */,
+				420127A11DC7407200125A83 /* LaunchScreen.storyboard in Resources */,
+				425B20A11E9CDC6200A65072 /* CCPlayShowView.xib in Resources */,
+				4220588B1E98AA5700183194 /* CCPlayingCollectionCell.xib in Resources */,
+				4201279E1DC7407200125A83 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		420127A51DC7407200125A83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		420127B01DC7407200125A83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		28D06423AFC7DC0767601565 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CCEncrypt/Pods-CCEncrypt-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3DF69A395D5E0D59DF887F8D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CCEncrypt/Pods-CCEncrypt-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		425B20D41EA3BDE200A65072 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "INFOPLIST=\"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\necho \"writing to $INFOPLIST\"\nPLISTCMD=\"Add :SERVER_IP string $(ifconfig | grep inet\\ | tail -1 | cut -d \" \" -f 2)\"\necho -n \"$INFOPLIST\" | xargs -0 /usr/libexec/PlistBuddy -c \"$PLISTCMD\" || true\nPLISTCMD=\"Set :SERVER_IP $(ifconfig | grep inet\\ | tail -1 | cut -d \" \" -f 2)\"\necho -n \"$INFOPLIST\" | xargs -0 /usr/libexec/PlistBuddy -c \"$PLISTCMD\" || true";
+		};
+		4E829B5FCBA7AB3E8DDBB6FE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4201278A1DC7407200125A83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42C4E01F1E74580F006DFD57 /* CCBaseTabBarController.m in Sources */,
+				42C4E00E1E74547C006DFD57 /* AppDelegate.m in Sources */,
+				42C4E0341E7458A5006DFD57 /* CCMineViewController.m in Sources */,
+				422717571E9BD769004E4702 /* CCPlayScrollView.m in Sources */,
+				42A81E131E9A49540080CDD2 /* CCRefresh.m in Sources */,
+				42C4E0221E74582B006DFD57 /* CCTintNavigationController.m in Sources */,
+				422058B21E9963E200183194 /* CCMediaHelper.m in Sources */,
+				42C7C7831E76949000FE33C5 /* CCCommonController.m in Sources */,
+				425B209F1E9CDC4900A65072 /* CCPlayShowView.m in Sources */,
+				422058951E98DD0800183194 /* CCConstDefines.m in Sources */,
+				425B20CF1EA0B8C200A65072 /* LFLivePreview.m in Sources */,
+				42C7C78B1E76966E00FE33C5 /* CCAppHelper.m in Sources */,
+				42C4E00F1E74547C006DFD57 /* main.m in Sources */,
+				4220588A1E98AA5700183194 /* CCPlayingCollectionCell.m in Sources */,
+				422058BA1E99664E00183194 /* CCPlayingController.m in Sources */,
+				425B20B51E9DEB3800A65072 /* CCRecordViewController.m in Sources */,
+				422058BD1E9969F700183194 /* CCPlaysCollect.m in Sources */,
+				42C4E0281E74586F006DFD57 /* CCHomeViewController.m in Sources */,
+				422058861E98AA1B00183194 /* CCPlayInfoItem.m in Sources */,
+				422717541E9BB23D004E4702 /* CCPlayViewCell.m in Sources */,
+				42C7C78F1E77B23600FE33C5 /* CCTabBar.m in Sources */,
+				4227175D1E9CB826004E4702 /* CCLoadingView.m in Sources */,
+				4227174D1E9BAFC6004E4702 /* CCPlayingCollectionController.m in Sources */,
+				425B20AF1E9D4E1F00A65072 /* CCRequestHelper.m in Sources */,
+				422717511E9BB0A9004E4702 /* CCPlayView.m in Sources */,
+				425B209C1E9CD85B00A65072 /* CCRadianView.m in Sources */,
+				425B20CA1EA0B64B00A65072 /* CCPowerHelper.m in Sources */,
+				422058981E98DD2B00183194 /* CCNetHelper.m in Sources */,
+				425B20961E9CC5E000A65072 /* CCPlayScrollExtView.m in Sources */,
+				425B20D31EA3723900A65072 /* CCMineReactView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		420127A31DC7407200125A83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				420127AC1DC7407200125A83 /* CCEncryptTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		420127AE1DC7407200125A83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				420127B71DC7407200125A83 /* CCEncryptUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		420127A91DC7407200125A83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4201278D1DC7407200125A83 /* CCEncrypt */;
+			targetProxy = 420127A81DC7407200125A83 /* PBXContainerItemProxy */;
+		};
+		420127B41DC7407200125A83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4201278D1DC7407200125A83 /* CCEncrypt */;
+			targetProxy = 420127B31DC7407200125A83 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4201279F1DC7407200125A83 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				420127A01DC7407200125A83 /* Base */,
+				422058A71E99460E00183194 /* zh-Hans */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		420127B91DC7407200125A83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		420127BA1DC7407200125A83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		420127BC1DC7407200125A83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2588CB69D3BAC2111D0B0592 /* Pods-CCEncrypt.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UB39Q62P6K;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CCEncrypt/Framework",
+				);
+				INFOPLIST_FILE = CCEncrypt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mitao.CCEncrypt;
+				PRODUCT_NAME = "喵";
+			};
+			name = Debug;
+		};
+		420127BD1DC7407200125A83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4BFB9A723A375B7B2A013D9 /* Pods-CCEncrypt.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UB39Q62P6K;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CCEncrypt/Framework",
+				);
+				INFOPLIST_FILE = CCEncrypt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mitao.CCEncrypt;
+				PRODUCT_NAME = "喵";
+			};
+			name = Release;
+		};
+		420127BF1DC7407200125A83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CCEncryptTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mitao.CCEncryptTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CCEncrypt.app/CCEncrypt";
+			};
+			name = Debug;
+		};
+		420127C01DC7407200125A83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CCEncryptTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mitao.CCEncryptTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CCEncrypt.app/CCEncrypt";
+			};
+			name = Release;
+		};
+		420127C21DC7407200125A83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CCEncryptUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mitao.CCEncryptUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CCEncrypt;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		420127C31DC7407200125A83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CCEncryptUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mitao.CCEncryptUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CCEncrypt;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		420127891DC7407200125A83 /* Build configuration list for PBXProject "CCEncrypt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				420127B91DC7407200125A83 /* Debug */,
+				420127BA1DC7407200125A83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		420127BB1DC7407200125A83 /* Build configuration list for PBXNativeTarget "CCEncrypt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				420127BC1DC7407200125A83 /* Debug */,
+				420127BD1DC7407200125A83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		420127BE1DC7407200125A83 /* Build configuration list for PBXNativeTarget "CCEncryptTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				420127BF1DC7407200125A83 /* Debug */,
+				420127C01DC7407200125A83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		420127C11DC7407200125A83 /* Build configuration list for PBXNativeTarget "CCEncryptUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				420127C21DC7407200125A83 /* Debug */,
+				420127C31DC7407200125A83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 420127861DC7407200125A83 /* Project object */;
+}
