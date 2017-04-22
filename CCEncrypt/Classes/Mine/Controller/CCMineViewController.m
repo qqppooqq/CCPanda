@@ -17,6 +17,8 @@
 
 @interface CCMineViewController ()
 
+/**  */
+@property (nullable, nonatomic, weak) YYLabel *yyLabel;
 
 @end
 
@@ -32,7 +34,7 @@
 }
 
 - (void)controllerLayoutSubviews {
-//    self.yyLabel.frame = CGRectInset(CCScreenBounds, 100, 100);
+    self.yyLabel.frame = self.view.bounds;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -84,5 +86,17 @@
 
 
 #pragma mark - Lazy
+- (YYLabel *)yyLabel {
+    if (!_yyLabel) {
+        YYLabel *yyLabel = [YYLabel new];
+        yyLabel.text = @"直播推流地址:\nrtmp://live.hkstv.hk.lxdns.com:1935/live/stream153";
+        yyLabel.numberOfLines = 0;
+        yyLabel.textAlignment = NSTextAlignmentCenter;
+        [self.view addSubview:yyLabel];
+        _yyLabel = yyLabel;
+    }
+    return _yyLabel;
+}
+
 
 @end
