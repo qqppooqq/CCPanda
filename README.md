@@ -6,3 +6,6 @@
 clone完成, 先解压CCPanda/CCEncrypt/Framework下的ijkplayer静态库
 
 在执行 pod install 即可执行
+
+最新代码, 国内git更喜欢使用
+http://git.oschina.net/mitaoGO/CCEncrypt
